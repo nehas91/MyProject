@@ -1,0 +1,915 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.top-navbar{
+    height: 57px;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(19, 149, 192);
+    z-index: 2;
+}
+
+.logo{
+    height: 40px;
+    margin: 5px 10px;
+}
+
+.form-control{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid rgb(19, 149, 192) !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.input-group-text{
+    background: rgb(19, 149, 192) !important;
+    border: 1px solid rgb(19, 149, 192) !important;
+    margin: 8.5px 10px 3px 0  !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+
+.search-box{
+    display: inline-flex;
+    width: 60%;
+}
+
+.fa-search{
+    color: #fff;
+}
+
+.menu-bar{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li{
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: rgb(19, 149, 192);
+    cursor: pointer;
+}
+
+.menu-bar ul li a{
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+}
+
+.fa-shopping-basket{
+    margin-right: 5px;
+}
+.fa-sign-in{
+    margin-right: 5px;
+}
+.fa-user-plus{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .top-navbar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width:100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu-bar ul li{
+        height: 70px;
+        width: 100%;
+    }
+}
+
+/* ---------------------------------Dropdown menu---------------------------- */
+
+.sub-menu1{
+    display: none;
+    
+}
+
+
+
+.sub-menu1 ul li a{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.fa-user-circle{
+    color:  rgb(19, 149, 192);
+    margin-right: 7px;
+}
+
+.fa-window-maximize{
+    color:  rgb(19, 149, 192);
+    margin-right: 7px;
+}
+
+
+.fa-sign-out{
+    color:  rgb(19, 149, 192);
+    margin-right: 10px;
+}
+
+
+
+.menu-bar ul li:hover .sub-menu1
+{
+    display: block;
+    position: absolute;
+    color: black;
+    margin-top: 8px;
+    margin-left: -25px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul{
+        display: block;
+        margin: 10px;
+    
+        
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px dotted grey;
+    border-radius: 0;
+    text-align: left;
+    
+    
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border: none;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+        color: rgb(19, 149, 192);
+}
+
+/* ----------------------------------Drop down second--------------------------- */
+
+.sub-menu2{
+    display: none;
+    
+}
+
+.fa-shopping-cart{
+    color:  rgb(19, 149, 192);
+    margin-right: 7px;
+}
+
+.fa-gift{
+    color:  rgb(19, 149, 192);
+    margin-right: 7px;
+}
+
+
+.sub-menu2 ul li a{
+     color: black; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.menu-bar ul li:hover .sub-menu2
+{
+    display: block;
+    position: absolute;
+    color: black;
+    margin-top: 8px;
+    margin-left: -85px;
+}
+
+.menu-bar ul li:hover .sub-menu2 ul{
+        display: block;
+        margin: 10px;
+    
+        
+}
+.menu-bar ul li:hover .sub-menu2 ul li{
+    width: 220px;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px dotted grey;
+    border-radius: 0;
+    text-align: left;
+    
+    
+}
+
+.menu-bar ul li:hover .sub-menu2 ul li:last-child{
+    border: none;
+}
+
+.menu-bar ul li:hover .sub-menu2 ul li a:hover{
+        color: rgb(19, 149, 192);
+}
+
+/* ------------------------------Drop-down Menu--------------------------- */
+
+.main-dropdown{
+    background: rgb(19, 149, 192);
+    text-align: left;   
+    height: 35px;
+     margin-top: -18px; 
+     font-family: sans-serif; 
+}
+
+.main-dropdown ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff
+    
+}
+.main-dropdown ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    padding-left: 150px;
+    margin-top: -8px;
+    
+
+}
+
+.main-dropdown ul li a{
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+font-family: sans-serif;
+
+}
+
+
+.sub-menu3{
+    display: none;
+}
+
+.sub-menu3 ul li a{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.main-dropdown ul li:hover .sub-menu3{
+    display: block;
+    position: absolute;
+    color: black;
+    margin-left: -40px;
+}
+
+.main-dropdown ul li:hover .sub-menu3 ul{
+    display: block;
+    margin: 10px;
+    
+}
+
+.main-dropdown ul li:hover .sub-menu3 ul li{
+    width: 150px;
+    height: 1px;
+    padding: 20px;
+    padding-bottom: 29px;
+    background-color: white;
+    border-bottom: 1px dotted grey;
+    border-radius: 0;
+    text-align: center;
+    
+}
+.main-dropdown ul li:hover .sub-menu3 ul li:last-child{
+    border-bottom: none;
+}
+
+.main-dropdown ul li:hover .sub-menu3 ul li a:hover{
+    color: rgb(19, 149, 192);
+}
+
+/* --------------------------------Sports Items------------------------- */
+
+
+.sport-box{
+    margin: 100px 0;
+}
+
+.title-style h1{
+    padding: 10px 0;
+
+}
+
+
+.title-style{
+    margin: 0 auto 80px;
+    height: 80px;
+    width: 28%;
+    max-width: 700px;
+    background: #fff;
+    position: relative;
+     box-shadow: 0px 4px 5px 0px #000001; 
+    
+}
+
+.title-style::after{
+    content: '';
+    height: 60px;
+    width: 120px;
+    background-color: rgb(19, 149, 192);
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    z-index: -1;
+}
+
+.title-style::before{
+    content: '';
+    height: 60px;
+    width: 120px;
+    background-color: rgb(19, 149, 192);
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    z-index: -1;
+}
+/* ---------------------------------------Banner---------------------------- */
+
+.image img{
+    height: 300px;
+    width: 675px;
+    margin-left: -120px;
+}
+
+.image2 img{
+    height: 300px;
+    width: 675px;
+    margin-left: 272px;
+}
+
+#adidas {
+    height: 60px;
+    width: 100px;
+    margin-top: 38px;
+    margin-left: 115px;
+}
+
+#puma{
+    margin-top: -10px;
+    width: 180px;
+    height: 90px;
+    margin-left: 80px;
+}
+
+
+#kookabura{
+    height: 120px;
+    width: 120px;
+    margin-top: -1px;
+    margin-left: 109px;
+}
+
+#sston{
+        margin-top: 15px;
+        height: 43px;
+        margin-left: 80px;
+        
+}
+
+#sg{
+    width: 110px;
+    height: 80px;
+    margin-left: 113px;
+    margin-top: 15px;
+}
+
+#mrf{
+    height: 80px;
+    width: 140px;
+    margin-left: 87px;
+    margin-top: 1px;
+}
+
+#spartan{
+    height: 90px;
+    width: 110px;
+    margin-top: 8px;
+    margin-left: 100px;
+}
+
+#ceat{
+    height: 33px;
+    width: 100px;
+    margin-top: 35px;
+    margin-left: 106px;
+}
+
+#krx{
+    height: 60px;
+    width: 110px;
+    margin-left: 105px;
+    margin-top: 35px;
+}
+
+#kobo{
+    height: 70px;
+    width: 120px;
+    margin-left: 98px;    
+    margin-top: -2px;
+}
+
+#kakss{
+    height: 70px;
+    width: 85px;
+    margin-top: 5px;
+    margin-left: 104px;
+}
+#kore{
+    height: 50px;
+    width: 130px;
+    margin-top: 5px;
+}
+#starx{
+    height: 70px;
+    width: 100px;
+    margin-top: -20px;
+    margin-left: 100px;
+}
+
+#powermax{
+    height: 80px;
+    width: 120px;
+    margin-top: 15px;
+}
+
+#adrenex{
+    height: 30px;
+    width: 130px;
+    margin-left: 98px;
+    margin-top: 40px;
+}
+
+#reach{
+    height: 25px;
+    width: 110px;
+    margin-top: 38px;
+    margin-left: 108px;
+}
+/* ----------------------------------------Brands------------------------------- */
+
+
+.website-features2{
+    margin: 60px 0;
+}
+
+.website-features2 img{
+    width: 50%;
+    margin-left: 100px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.website-features2 img:hover{
+    transform: scale(1.1);
+}
+
+
+/* -----------------------------------------Featured products------------------------ */
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+
+.title:after{
+    content: '';
+    background: rgb(19, 149, 192);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature-box1{
+    margin-top: -28px;
+}
+
+.rating .fa{
+    font-size: 11px;
+    color: gold;
+}
+.features-categories img{
+    width: 130px;
+    height: 220px;
+    margin-left: 60px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.rating{
+    margin-left: 95px;
+    margin-top: 10px;
+}
+.caption1{
+    margin-left: 55px;
+}
+
+#one1{
+    margin-left: -40px;
+}
+
+#two2{
+    margin-left: -57px;
+}
+
+#three3{
+    margin-left: -32px;
+}
+
+#four4{
+    margin-left: -30px;
+}
+
+
+.shift{
+    margin-left: -20px;
+}
+
+.shift5{
+    margin-left: -100px;
+}
+.price{
+    margin-left: 46px;
+}
+
+.features-categories img:hover{
+    transform: scale(1.1);
+}
+.adi{
+    margin-left: -45px;
+}
+
+#adi1{
+    margin-left: -15px;
+}
+#redtape2{
+    margin-left: -44px;
+}
+.bat{
+    margin-left: -20px;
+}
+#fur1{
+    margin-left: -39px;
+}
+#sp{
+    margin-left: -32px;
+}
+
+#ro{
+    margin-left: -38px;
+}
+
+#du{
+    margin-left: -31px;
+}
+
+#onee{
+    margin-left: -45px;
+}
+
+#two{
+    margin-left: -20px;
+}
+#three{
+    margin-left: -14px;
+}
+
+#four{
+    margin-left: -28px;
+}
+
+#five{
+    margin-left: -47px;
+}
+
+#cricket1{
+    height: 150px;
+    margin-top: 70px;
+}
+#cricket2{
+    height: 180px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+#cricket3{
+    height: 220px;
+    width: 40px;
+    margin-left: 107px;
+}
+#cricket4{
+    height: 250px;
+    width: 270px;
+    margin-top: -30px;
+    margin-left: -5px;
+}
+#cricket5{
+    height: 150px;
+    width: 150px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+#cricket6{
+    height: 150px;
+    width: 150px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+#cricket7{
+    height: 230px;
+    margin-top: -10px;
+}
+#cricket8{
+    height: 250px;
+    width: 40px;
+    margin-top: -30px;
+    margin-left: 106px;
+}
+#cricket9{
+    height: 150px;
+    margin-top: 70px;
+    margin-left: 55px;
+}
+#cricket10{
+    width: 220px;
+    margin-left: 20px;
+    margin-left: 10px;
+}
+#cricket11{
+    height: 240px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: 107px;
+}
+#star{
+    margin-left: -50px;
+}
+#power{
+    margin-left: -22px;
+}
+
+#homegym1{
+    height: 200px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+#homegym2{
+    height: 195px;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+#homegym3{
+    height: 175px;
+    width: 200px;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+#homegym4{
+    height: 200px;
+    width: 190px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+#homegym5{
+    height: 200px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+#homegym6{
+    height: 195px;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 38px;
+}
+#homegym7{
+    height: 195px;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+#homegym8{
+    height: 200px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#homegym9{
+    height: 200px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#homegym10{
+    height: 180px;
+    width: 170px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+#homegym11{
+    height: 170px;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#homegym12{
+    height: 200px;
+    width: 190px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+/* ------------------------------------On sale--------------------------------- */
+
+#title2{
+    margin-top: 65px;
+}
+
+.one{
+    margin-left: -40px;
+}
+
+.str{
+    color: black;
+}
+
+
+.price1{
+    margin-left: 20px;
+    color: green;
+}
+.price11{
+    margin-left: 46px;
+}
+
+.price2{
+    margin-left: 23px;
+    color: green;
+}
+
+
+.shift1{
+    margin-left: -1px;
+}
+
+.price3{
+    margin-left: 30px;
+    color: green;
+}
+
+.price4{
+    margin-left: 23px;
+    color: green;
+}
+
+
+/* ---------------------------------------Banner2------------------------------ */
+
+
+.image3 img{
+    height: 220px;
+    width: 415px;
+    margin-left: -69px;
+    
+}
+
+.image4 img{
+    height: 220px;
+    width: 416px;
+    margin-left: 71px;
+}
+
+.image5 img{
+    height: 220px;
+    width: 415px;
+    margin-left: 212px;
+}
+
+.feature2{
+    margin-top: 120px;
+}
+
+
+#bestsell{
+    margin-top: 100px;
+}
+
+#bestsell2{
+    margin-left: -40px;
+}
+
+#bestsell3{
+    margin-left: -29px;
+}
+#bestsell4{
+    margin-left: -46px;
+}
+
+
+
+
+
+/* --------------------------------Website features---------------------- */
+
+
+.website-features{
+    margin: 60px 0;
+}
+
+.website-features img{
+    width: 20%;
+    margin-left: 100px;
+}
+
+.featured-text{
+    margin-top: 10px;
+    float: right;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.featured-box{
+    
+    padding-top: 20px;
+}
+
+/* ------------------------------------Footer-------------------------------- */
+
+.footer{
+    margin-top: 50px;
+    background: rgb(58, 154, 185);
+    color: #fff;
+}
+.footer h1{
+    font-size: 15px;
+    margin: 25px 0;
+}
+.footer p{
+    font-size:12px;
+}
+
+.footer .row .fa{
+    padding-right: 20px;
+    font-size: 15px;
+
+}
+
+
+.footer-image img{
+    height: 120px;
+    width: 120x;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.endd{
+    padding-bottom: 20px;
+}
+
+.footer hr{
+    margin-top: -20px;
+    background-color: #ccc;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/Signup.css">
+    </head>
+    <body>
+        <form method="post" action="AddProductServlet" style="border:1px solid #ccc">
+            <div class="container">
+                <h1 style="text-align: center">ADD PRODUCT</h1>
+                <br/>
+                <p style="align-content: center">Please fill in this form to Add Product.</p>
+                <hr>
+
+                <label for="pid"><b>Product Id</b></label>
+                <input type="text" placeholder="Enter Product Id" name="pid" required><br/>
+
+                <label for="ptitle"><b>Product Title</b></label>
+                <input type="text" placeholder="Enter Product Title" name="ptitle" required ><br/>
+
+                <label for="pdesc"><b>Product Desription</b></label>
+                <input type="text" placeholder="Enter Product Desription" name="pdesc" required><br/>
+
+                <label for="pphoto"><b>Product Photo</b></label>
+                <input type="text" placeholder="Enter Product Photo" name="pphoto" required><br/>
+
+                <label for="pseller"><b>Product Seller</b></label>
+                <input type="text" placeholder="Enter Seller" name="pseller" required><br/>         
+                
+                <label for="pprice"><b>Product Price</b></label>
+                <input type="number" placeholder="Enter Product Price" name="pprice" required><br/>
+
+                <label for="pdiscount"><b>Product Discount</b></label>
+                <input type="number" placeholder="Enter Product Discount" name="pdiscount" required><br/>
+            
+                <label for="pquantity"><b>Product Quantity</b></label>
+                <input type="number" placeholder="Enter Product Quantity" name="pquantity" required>  
+                <br/>
+               
+
+                <label for="categoryid"><b>Category Id</b></label>
+                <input type="text" placeholder="Enter Category Id" name="categoryid" required>
+                <br/>
+
+
+
+
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn" >Cancel</button>
+                    <button type="submit" class="signupbtn">ADD Product</button>
+                    <br/>
+                </div>
+            </div>
+       
+        </form>
+
+    </body>
+</html>

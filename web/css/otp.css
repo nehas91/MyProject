@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Sep, 2020, 2:05:13 AM
+    Author     : asdf
+*/
+
+body{
+    background-color: #3AAFA9;
+    
+}
+.logo{
+    height: 90px !important;
+    width: 180px;
+    margin: 5px 10px;
+}
+
+
+.heading{
+    margin-top: 10% !important;
+    text-shadow: 1.5px 2px 2px #666;
+    text-align: center !important;
+    margin-left: 100%;
+    font-size: 50px !important;
+    font-family: "Playfair Display" , sans-serif;
+    font-weight: 700;
+    margin-top: 0px;;
+    text-align: center;
+}
+
+.mainotp{
+    border: 2px solid #000;
+    box-shadow:1.5px 1px 1px #000; 
+    margin-top: 4%;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 15px 20px;
+}
+button{
+    padding: 5px 5px;
+    background-color: #0f0;
+    font-weight: 800;
+    font-weight: 500;
+    border: none;
+    box-shadow: 2px 3px 1.5px #000;
+    border-radius: 10px;
+    color: 000;
+}

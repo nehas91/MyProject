@@ -1,0 +1,336 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    side bar
+*/
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
+
+/*
+end of isdebar
+*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#1fab8f;
+    font-family: sans-serif;
+}
+.top-navbar{
+    height: 57px;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(19, 149, 192);
+    z-index: 2;
+}
+
+.logo{
+    height: 40px;
+    width: 180px;
+    margin: 5px 10px;
+}
+
+.form-control{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid rgb(19, 149, 192) !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.input-group-text{
+    background: rgb(19, 149, 192) !important;
+    border: 1px solid rgb(19, 149, 192) !important;
+    margin: 8.5px 5px 3px 0  !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+
+.search-box{
+    display: inline-flex;
+    width: 60%;
+}
+
+.fa-search{
+   padding-right: 15px;
+    color: #fff;
+}
+
+ .fa-pump-soap{
+     padding-right: 15px;
+    color: #fff;
+}
+
+
+
+.fa-pump-medical{
+    padding-right: 6px;
+    color: #003300;
+}
+
+.fa-briefcase{
+    padding-right: 6px;
+    color: #ffffff;
+}
+
+
+
+.menu-bar{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li{
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: rgb(19, 149, 192);
+    cursor: pointer;
+}
+
+.menu-bar ul li a{
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+}
+
+.fa-shopping-basket{
+    margin-right: 5px;
+}
+.fa-sign-in{
+    margin-right: 5px;
+}
+.fa-user-plus{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .top-navbar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width:100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    }
+}
+
+/*-----------------------------Slider in css----------------------------------*/
+
+
+.slider{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0 10px;
+    
+}
+
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0,0.5);
+    
+}
+
+.carousel-indicators{
+    z-index: 1 !important;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+
+.btn{
+    height: 2%;
+    width: 20%;
+    font-weight: 900;
+    background-color: #000;
+    text-align: center;
+    border-radius: 0.5%;
+    margin-left: 40%;
+    padding: 22px;
+}
+
+.feature{
+    width: 70%;
+    margin: auto;
+    background-color:#fff;
+    
+    margin-top: 0px;
+    border: 4px solid #030;
+    border-radius: 2%;
+    padding: 5%;
+}
+
+.icon{
+    border-radius: 50%;
+    border: 3px solid #000;
+    height: 100px;
+    width: 100px;
+}
+
+.chead{
+    border: 1px solid #000 ; 
+    background-color: #fff;
+    font-weight: 900;
+    padding: 40px 15px; 
+    box-shadow: 20px 20px #000
+}
+
+.cblog{
+    background-color:#000;
+    color: white;
+    border: 1.5px solid #030;
+    border-radius: 5%;
+    padding: 15px;
+    margin: 4%;
+}
+.adv{
+    display: inline-flex !important;
+    margin: auto;
+    color: #000;
+    font-weight: 500;
+    width: 40%;
+    margin-top: 1%;
+   margin-right: 5%;
+}
+
+
+
+/* --------------------------------Website features---------------------- */
+
+
+.website-features{
+    margin: 60px 0;
+}
+
+.website-features img{
+    width: 20%;
+    margin-left: 100px;
+}
+
+.featured-text{
+    margin-top: 10px;
+    float: right;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.featured-box{
+    
+    padding-top: 20px;
+}
+
+/* ------------------------------------Footer-------------------------------- */
+
+.footer{
+    margin-top: 50px;
+    background: rgb(58, 154, 185);
+    color: #fff;
+}
+.footer h1{
+    font-size: 15px;
+    margin: 25px 0;
+}
+.footer p{
+    font-size:12px;
+}
+
+.footer .row .fa{
+    padding-right: 20px;
+    font-size: 15px;
+
+}
+
+
+.footer-image img{
+    height: 120px;
+    width: 120x;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.endd{
+    padding-bottom: 20px;
+}
+
+.footer hr{
+    margin-top: -20px;
+    background-color: #ccc;
+}
+
+.color-change{
+    color: #fff;
+}
